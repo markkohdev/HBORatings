@@ -1,0 +1,10 @@
+HBO Movies List (XML):
+http://catalog.lv3.hbogo.com/apps/mediacatalog/rest/productBrowseService/HBO/category/INDB487
+
+HBO:
+http://catalog.lv3.hbogo.com/apps/mediacatalog/rest/quicklinkService/HBO/quicklink/SE
+
+IMDB API:
+http://stackoverflow.com/questions/1966503/does-imdb-provide-an-api
+
+https://github.com/Geczy/netflix-ratings/blob/master/classes/class.imdb.js

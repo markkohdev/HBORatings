@@ -1,0 +1,56 @@
+body {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	color:#FFF;
+	background: #0F0F0F url("../img/bg_top.png") no-repeat center top;
+}
+
+.imdb_logo {
+	width: 30px;
+	height: 15px;
+	background: url("../img/imdb_logo.png") no-repeat;
+	background-size: contain;
+	margin-right: 3px;
+	display:inline-block;
+}
+
+.rt_logo {
+	width: 20px;
+	height: 20px;
+	background: url("../img/rt_logo.png") no-repeat;
+	background-size: contain;
+	margin-right: 3px;
+	display:inline-block;
+}
+
+
+/* BOOTSTRAPPY THINGS */
+.container-narrow {
+	margin: 0 auto;
+	max-width: 700px;
+}
+.container-narrow > hr {
+	margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+	margin: 60px 0;
+	text-align: center;
+}
+.jumbotron h1 {
+	font-size: 72px;
+	ine-height: 1;
+}
+.jumbotron .btn {
+	font-size: 21px;
+	padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+	margin: 60px 0;
+}
+.marketing p + h4 {
+	margin-top: 28px;
+}
