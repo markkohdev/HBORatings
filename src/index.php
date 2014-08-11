@@ -5,29 +5,31 @@ include("sort_utils.php");
 //Prepare the movie list
 $MovieList = json_decode(file_get_contents(MOVIE_DB_FILENAME));
 
-switch($_REQUEST['sort']){
+$default_sort = "imdb";
+$sort = isset($_REQUEST['sort']) ? $_REQUEST['sort'] : $default_sort;
+switch($sort){
 	case "alpha":
 		//Alphabetic
-	usort($MovieList,'cmpTitle');
-	break;
+		usort($MovieList,'cmpTitle');
+		break;
 	case "ralpha":
 		//Reverse alphabetic
-	usort($MovieList,'cmpTitle');
-	$MovieList = array_reverse($MovieList);
-	break;
+		usort($MovieList,'cmpTitle');
+		$MovieList = array_reverse($MovieList);
+		break;
 	case "imdb":
 		//IMDB rating, highest to lowest
-	usort($MovieList,'cmpIMDBRating');
-	$MovieList = array_reverse($MovieList);
-	break;
+		usort($MovieList,'cmpIMDBRating');
+		$MovieList = array_reverse($MovieList);
+		break;
 	case "rimdb":
 		//IMDB rating, lowest to highest
-	usort($MovieList,'cmpIMDBRating');
-	break;
+		usort($MovieList,'cmpIMDBRating');
+		break;
 	default:
-		//Default - Alphabetic
-	usort($MovieList,'cmpTitle');
-	break;
+		//Default - Declared above
+		usort($MovieList,$default_sort);
+		break;
 }
 
 printHeader("Home | HBO Go Ratings");

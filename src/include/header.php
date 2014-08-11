@@ -23,7 +23,7 @@
 				<li><a href="index.php?sort=alpha">Alphabetic</a></li>
 				<li><a href="index.php?sort=imdb">IMDB Rating</a></li>
 			</ul>
-			<h3 class="muted">HBO Go Ratings</h3>
+			<h3 class="muted"><a href="index.php"><img src="img/logo_245x89.png" alt="HBO Go Ratings Logo" /></a></h3>
 		</div>
 
 		<hr>

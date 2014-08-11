@@ -1,5 +1,5 @@
 <?php
-set_include_path(get_include_path().PATH_SEPARATOR.'/home1/markkoh3/public_html/hboratings/include/');
+set_include_path(get_include_path().PATH_SEPARATOR.'/home1/markkoh3/public_html/hboratings.com/include/');
 
 //Include for every page
 include("constants.php");
