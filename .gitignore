@@ -1,0 +1,19 @@
+*.pyc
+*.db
+*~
+
+build/
+dist/
+*.egg-info/
+env/
+.idea/
+MANIFEST
+.DS_Store
+._.DS_Store
+tags
+
+# Ignore secret things
+secrets.zip
+secrets/
+secrets_/
+booksmart/booksmart/settings/prod.py
