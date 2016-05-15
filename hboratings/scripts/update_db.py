@@ -14,5 +14,4 @@ def run():
             obj = serializer.save()
             movie_objects.append(obj)
 
-
     print movie_objects

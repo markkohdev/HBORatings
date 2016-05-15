@@ -17,6 +17,7 @@ class PolymorphicBaseModel(PolymorphicModel, BaseModel):
         abstract = True
 
 class Movie(PolymorphicBaseModel):
+    hboInternalId = models.CharField(max_length=15)
     title = models.CharField(max_length=500)
     shortTitle = models.CharField(max_length=200)
     year = models.IntegerField()
@@ -26,3 +27,9 @@ class Movie(PolymorphicBaseModel):
     endDate = models.DateTimeField()
     language = models.CharField(max_length=10)
     primaryGenre = models.CharField(max_length=50)
+
+class MovieThumbnail(BaseModel):
+    movie = models.ForeignKey(Movie, related_name='thumbnails')
+    url = models.CharField(max_length=200)
+    width = models.IntegerField()
+    height = models.IntegerField()

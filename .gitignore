@@ -2,6 +2,7 @@
 *.db
 *~
 
+hboratings/db.sqlite3
 build/
 dist/
 *.egg-info/

@@ -20,5 +20,5 @@ import hboratings.movies.views as Movies
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^movies/', Movies.MovieView.as_view())
+    url(r'^movies/', Movies.MovieView.as_view()),
 ]

@@ -1,4 +1,4 @@
-import urllib
+import urllib, re
 from django.conf import settings
 import xml.etree.ElementTree as ET
 
@@ -32,7 +32,9 @@ class HBOService():
     def convert_xml_to_dict(cls, movie_xml):
         movie = {}
 
+        # All of these fields will map directly to the thing
         direct_nodes = [
+            'hboInternalId',
             'title',
             'shortTitle',
             'shortSummary',
@@ -49,6 +51,9 @@ class HBOService():
 
         for node in direct_nodes:
             movie[node] = movie_xml.find(node).text
+
+        # Get the thumbnails
+
 
         return movie
 
